@@ -1,0 +1,17 @@
+n=int(input("enter the number of fresh loaves purchased"))
+m=int(input("enter the number of day old loaves purchased"))
+b=(185*60)/100
+if(n,m>0):
+    print("regular price - Rs.185.00")
+    a=n*185
+    x=round(a,ndigits=2)
+    print("amount of new loaves -",x)
+    c=m*185.00
+    d=m*b
+    e=c-d
+    print("amount of day old loaves -", round(e,ndigits=2))
+    f=a+e
+    print("total amount - Rs.","%2f"%(f))
+else:
+    print("invalid input")
+    
