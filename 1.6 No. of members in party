@@ -1,0 +1,21 @@
+T=int(input("enter the value of T : "))
+E=[]
+L=[]
+A=[]
+for i in range(0,T):
+    a=int(input("enter the entry time"))
+    E.append(a)
+print("entry time =",E)
+for i in range(0,T):
+    b=int(input("enter the leaving time"))
+    L.append(b)
+print("leaving time =",L)
+for i in range(0,T):
+    c=E[i]+L[i]
+    A.append(c)
+print(A)
+max=A[0]
+for i in range(1,len(A)):
+    if(A[i]>max):
+        max=A[i]
+print(max)
