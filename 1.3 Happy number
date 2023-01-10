@@ -1,0 +1,13 @@
+n=int(input("enter the number"))
+x=n
+while(x>=10):
+    sum=0
+    while(x>0):
+        a=x%10
+        sum=sum+a**2
+        x=x//10
+    x=sum
+if(x==1):
+    print("true")
+else:
+    print("false")
