@@ -1,0 +1,17 @@
+n=int(input("enter the number of elements in the list"))
+l=[]
+even=0
+odd=0
+if(n>0):
+    for a in range(0,n):
+        a=int(input("enter the element"))
+        l.append(a)
+    print(l)
+    for i in range(len(l)):
+        if l[i]%2==0:
+            even=even+l[i]**2
+        else:
+            odd=odd+l[i]**2
+    print("(",odd,",",even,")")
+else:
+    print("invalid range")
