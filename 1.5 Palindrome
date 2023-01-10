@@ -1,0 +1,13 @@
+n=int(input("enter the number"))
+reverse=0
+b=n
+while(n>0):
+    num=n%10
+    reverse=reverse*10+num
+    n=n//10
+    a=reverse
+print(a)
+if(a==b):
+    print("true")
+else:
+    print("false")
